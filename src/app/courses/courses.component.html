@@ -1,0 +1,35 @@
+<!-- <p>
+  courses works!
+</p> -->
+
+<h1>{{getTitle()}}</h1>
+<h1>{{Lenght+'Author'}}</h2>
+<ul *ngFor="let Course of Courses">
+    <li>
+      {{course}}
+    </li>  
+</ul>
+<br>
+<br>
+<br> 
+  <h1 align ="center">{{getJudul()}}</h1>
+  <h2 align ="center">{{tanggal|date:'fullDate'}}</h2>
+  <h2>{{getNama()}}<br> {{getAlamat()}}
+  </h2>
+  <h2>Hobi Saya</h2>
+
+  <table border="2">
+    <thead
+      <th>NO</th>
+      <th>Hobby</th>
+      <th>Keterangan</th>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let Hobi of Hobby">
+        <td>{{hobi.no}}</td>
+        <td>{{hobi.hobby}}</td>
+        <td>{{hobi.keterangan}}</td>
+      </tr>  
+    </tbody>
+  </table>  
